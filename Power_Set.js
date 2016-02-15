@@ -11,13 +11,13 @@ function powerSet(string) {
   var sortedArr = arr.sort();
   var combos = [[]];
   var result = [];
-  
   //get rid of dupes
   var noDupes = uniq(sortedArr);
   
   for(var i = 0; i < noDupes.length; i++){
     var length = combos.length;
     for(var j = 0; j < length; j++){
+      console.log()
       combos.push(combos[j].concat(noDupes[i]));
     }
   }
